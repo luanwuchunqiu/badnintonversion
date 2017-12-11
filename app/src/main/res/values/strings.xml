@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">BadmintonVersion</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="quick_start_turn_on">第一次使用时，\n时</string>
+    <string name="quick_start_turn_on_small">小字部分</string>
+
+
+    <string name="install_step1">将羽毛球硬件按图中所示方法安装在硅胶套中，使硅胶的丝扣位于羽毛球硬件的表面，羽毛球两侧的凹槽卡住硅胶套内环</string>
+    <string name="install_step2">将羽毛球硬件连同硅胶套套于球拍上，开启羽球硬件即可正常使用，正常安装后的效果如图所示。</string>
+    <string name="install_step3">正确安装后的效果图如图所示，设备轴线方向与拍框方向保持一致。</string>
+
+
+    <string name="device">Device:</string>
+    <string name="no_device">&lt;Select a device&gt;</string>
+    <string name="select_device">Select a device</string>
+    <string name="status">Status</string>
+    <string name="llsWrite">LinkLossAlert</string>
+    <string name="iasWrite">ImmediateAlert</string>
+    <string name="scanning">Scanning for devices...</string>
+    <string name="no_ble_devices">No LE devices found.</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Not connected</string>
+    <string name="ready">Ready</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connect">connect</string>
+    <string name="unpair">unpair</string>
+    <string name="pair">pair</string>
+    <string name="RadioButton1">Alert level high</string>
+    <string name="RadioButton2">Alert level mid</string>
+    <string name="RadioButton3">Stop alerting</string>
+    <string name="SystemId">SystemId</string>
+    <string name="ModelNumber">ModelNumber</string>
+    <string name="SerialNumber">SerialNumber</string>
+    <string name="FirmwareRevision">FirmwareRevision</string>
+    <string name="HardwareRevision">HardwareRevision</string>
+    <string name="SoftwareRevision">SoftwareRevision</string>
+    <string name="ManufactureName">ManufactureName</string>
+    <string name="RegCertDataList">RegCertDataList</string>
+    <string name="ManufactureId">    ManufactureId</string>
+    <string name="BatteryLevel">    Battery Level</string>
+    <string name="OrgId">    OrganizationId</string>
+    <string name="Txpower">    Txpower Level</string>
+    <string name="Noupdate">    No Update</string>
+    <string name="ReadTxPower">ReadTxPower</string>
+    <string name="high_alert">HIGH Alert triggered!</string>
+    <string name="low_alert">LOW Alert triggered!</string>
+    <string name="writeTxnoti">TxNoti</string>
+    <string name="readRssi">Read Rssi Value</string>
+    <string name="Readdummy">D Read</string>
+    <string name="removeBond">Remove Bond</string>
+    <string name="paired">paired</string>
+    <string name="popup_title">Quit nRF UART?</string>
+    <string name="popup_message">Do you want to quit this Application?</string>
+    <string name="popup_yes">YES</string>
+    <string name="popup_no">NO</string>
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
+    <string name="scan">Scan</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_login">Sign in</string>
+</resources>

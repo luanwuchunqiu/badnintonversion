@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorDark"
+            ></com.github.mikephil.charting.charts.PieChart>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/jingongxing_48dp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动技术风格"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="攻击型"
+                android:textColor="@color/orange"
+
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            android:orientation="vertical">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPaper_sports_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/analysis_indicator_0"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+
+                    android:background="@drawable/indicator_selected" />
+                <ImageView
+                    android:id="@+id/analysis_indicator_1"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:background="@drawable/indicator_unselected" />
+                <ImageView
+                    android:id="@+id/analysis_indicator_2"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/indicator_unselected" />
+                <ImageView
+                    android:id="@+id/analysis_indicator_3"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:background="@drawable/indicator_unselected" />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/analysis_date"
+                android:text="(2017-08-28--2017-08-28)"
+                android:textColor="@color/green"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

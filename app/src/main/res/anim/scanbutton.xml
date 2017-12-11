@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="true"
+    android:interpolator = "@android:anim/linear_interpolator"
+    android:duration="2000"
+    android:repeatMode="reverse"
+    android:repeatCount ="infinite"
+    ><!--
+    1.使用线性的插值器
+    2.使用的重复模式为
+    -->
+    <alpha
+        android:duration="2000"
+        android:repeatMode="reverse"
+        android:repeatCount ="infinite"
+
+        android:fromAlpha="1"
+        android:toAlpha="0"
+        />
+
+</set>

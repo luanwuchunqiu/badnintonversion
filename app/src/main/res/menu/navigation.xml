@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_sports"
+        android:icon="@drawable/sports"
+        android:title="运动" />
+
+    <item
+        android:id="@+id/navigation_train"
+        android:icon="@drawable/train"
+        android:title="训练" />
+
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@drawable/quanzi"
+        android:title="圈子" />
+    <item
+        android:id="@+id/navigation_match"
+        android:icon="@drawable/cup"
+        android:title="竞技" />
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/personnal"
+        android:title="个人" />
+
+
+</menu>

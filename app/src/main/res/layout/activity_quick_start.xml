@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#1e1516">
+    <LinearLayout
+        android:background="#236f72"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/qquick_start_back"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/ic_chevron_left_black_32dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快速入门"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></RelativeLayout>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layoutpoint"
+        android:layout_width="280dp"
+        android:layout_height="460dp"
+
+        android:layout_centerInParent="true"
+        android:background="@drawable/fragment_intro"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/quick_start_title_background"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/quick_turn_on_textView"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="开机"
+                android:textSize="24dp"
+                android:textColor="@color/green"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/quick_connect_textView"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="连接"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/quick_status_textView"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="状态"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/quick_synchronize_textView"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="同步"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/quick_turnoff_textView"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="关机"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+
+
+            android:id="@+id/quick_start_viewPaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/layoutpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/quick_indicator_0"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+
+            android:background="@drawable/indicator_selected" />
+        <ImageView
+            android:id="@+id/quick_indicator_1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="@drawable/indicator_unselected" />
+        <ImageView
+            android:id="@+id/quick_indicator_2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/indicator_unselected" />
+        <ImageView
+            android:id="@+id/quick_indicator_3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="@drawable/indicator_unselected" />
+        <ImageView
+            android:id="@+id/quick_indicator_4"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="@drawable/indicator_unselected" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</LinearLayout>

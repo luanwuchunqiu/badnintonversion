@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sports_gpal_background">
+
+
+    <LinearLayout
+        android:background="#001c22"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+
+                android:id="@+id/goal_back"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/ic_chevron_left_black_32dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动目标"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/goal_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_time_24dp"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运动时间"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"/>
+            </LinearLayout>
+            <com.xw.repo.BubbleSeekBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/sports_time_seekBar"
+                android:layout_below="@id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="0dp"
+                app:bsb_bubble_color="@color/green"
+                app:bsb_bubble_text_color="@color/white"
+                app:bsb_max="3.0"
+                app:bsb_min="0.0"
+                app:bsb_progress="0"
+
+
+                app:bsb_second_track_color="@color/green"
+
+                app:bsb_track_color="@color/grey"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/sports_time_seekBar"
+                android:orientation="horizontal"
+                android:layout_alignRight="@id/sports_time_seekBar">
+                <TextView
+                    android:id="@+id/sports_time_textView"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="h/次"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/time_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bat_times_24dp"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="挥拍次数"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"/>
+            </LinearLayout>
+            <com.xw.repo.BubbleSeekBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/sports_count_seekBar"
+                android:layout_below="@id/time_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="0dp"
+                app:bsb_bubble_color="@color/yellow"
+                app:bsb_bubble_text_color="@color/white"
+                app:bsb_max="5000"
+                app:bsb_min="0"
+                app:bsb_progress="0"
+
+
+                app:bsb_second_track_color="@color/yellow"
+
+                app:bsb_track_color="@color/grey"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/sports_count_seekBar"
+                android:orientation="horizontal"
+                android:layout_alignRight="@id/sports_count_seekBar">
+                <TextView
+                    android:id="@+id/sports_count_textView"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次/次"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/time_layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cal_24dp"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消耗卡路里"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"/>
+            </LinearLayout>
+            <com.xw.repo.BubbleSeekBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/sports_cal_seekBar"
+                android:layout_below="@id/time_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="0dp"
+                app:bsb_bubble_color="@color/deep_orange"
+                app:bsb_bubble_text_color="@color/white"
+                app:bsb_max="500"
+                app:bsb_min="0"
+                app:bsb_progress="0"
+
+
+                app:bsb_second_track_color="@color/deep_orange"
+
+                app:bsb_track_color="@color/grey"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/sports_cal_seekBar"
+                android:orientation="horizontal"
+                android:layout_alignRight="@id/sports_cal_seekBar">
+                <TextView
+                    android:id="@+id/sports_cal_textView"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cal/次"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/time_layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fre_24dp"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运动频次"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"/>
+            </LinearLayout>
+            <com.xw.repo.BubbleSeekBar
+                android:layout_marginLeft="20dp"
+                android:id="@+id/sports_frequence_seekBar"
+                android:layout_below="@id/time_layout4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="0dp"
+                app:bsb_bubble_color="#00cdff"
+                app:bsb_bubble_text_color="@color/white"
+                app:bsb_max="10"
+                app:bsb_min="0"
+                app:bsb_progress="0"
+
+
+                app:bsb_second_track_color="@color/blue_grey"
+
+                app:bsb_track_color="@color/grey"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/sports_frequence_seekBar"
+                android:orientation="horizontal"
+                android:layout_alignRight="@id/sports_frequence_seekBar">
+                <TextView
+                    android:id="@+id/sports_frequence_textView"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次/周"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\zyt\.android\build-cache\71e12b9ce2352a926b039b2786632d2aa18b5ee3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f2ee3b17cad61febf2375dac42c8d7f8644dd913">
+        <dex dex="E:\BadmintonOfLab\opens\BadmintonVersion\app\build\intermediates\pre-dexed\debug\classes_dfb1ea39df10a769c52f97ff88f336f6ca0c5281.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\BadmintonOfLab\opens\BadmintonVersion\app\libs\commons-math3-3.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf">
+        <dex dex="E:\BadmintonOfLab\opens\BadmintonVersion\app\build\intermediates\pre-dexed\debug\commons-math3-3.6.1_2264847fbd9a7e99b03bde945779e2e3b3f83228.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zyt\.android\build-cache\9d11c45f880c1170938b487b13a31ff2f54077c6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="E:\BadmintonOfLab\opens\BadmintonVersion\app\build\intermediates\pre-dexed\debug\classes_e82489b7e3009f89ee78fb64a49bf7036fb13f23.jar" />
+    </item>
+
+</items>

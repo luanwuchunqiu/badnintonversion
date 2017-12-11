@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:background="@color/colorDark"
+    android:id="@+id/fragment_show_data"
+   >
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动时间"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+        <TextView
+            android:id="@+id/time_text_view"
+            android:textColor="@color/deep_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "0.0"
+            />
+            <TextView
+                android:textColor="@color/deep_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="h"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消耗的卡路里"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:textColor="@color/deep_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "0.0"
+                android:id="@+id/cariello_text_view"
+                />
+            <TextView
+                android:textColor="@color/deep_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cal"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="挥拍次数"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:textColor="@color/deep_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "0"
+                android:id="@+id/count_text_view"
+                />
+            <TextView
+                android:textColor="@color/deep_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
